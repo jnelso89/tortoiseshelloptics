@@ -1,0 +1,246 @@
+/* General styling */
+html,
+body {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* header styling */
+header {
+  background: url("../images/glasses-bg.png") no-repeat center center;
+  background-size: cover;
+  height: 31rem;
+}
+
+nav {
+  background-color: cadetblue;
+  color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 1rem;
+  padding: 1rem 0;
+  justify-content: space-between;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+nav img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+ul li {
+  display: inline-block;
+  justify-content: flex-end;
+  padding: 0 1rem;
+}
+
+ul {
+  margin: 0;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* banner styling */
+.container.banner {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-banner {
+  background-color: white;
+  position: relative;
+  top: 10rem;
+  left: 2rem;
+  padding: 1.5rem 5rem;
+}
+
+.main-banner h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+/* info section styling */
+.container.highlights {
+  display: flex;
+  justify-content: center;
+}
+
+.highlight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  width: 5rem;
+  height: 8rem;
+  margin: 3rem;
+}
+
+.highlight img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+.highlight img.paper {
+  width: 3.5rem;
+}
+
+.container.company-info {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.info {
+  width: 35%;
+  margin-right: 5%;
+}
+
+.info h6 {
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: cadetblue;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+  width: 10rem;
+}
+
+.info p {
+  margin-bottom: 5rem;
+}
+
+/* footer styling */
+footer .container {
+  background-color: azure;
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  height: 1.5rem;
+  margin: 4rem 1rem 4rem 4rem;
+}
+
+/* responsive styling */
+@media only screen and (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+    margin: 0;
+    }
+
+  header {
+    height: 22rem;
+  }
+
+  nav {
+    position: static;
+  }
+
+  .main-banner {
+    position: static;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    padding: 0.75rem 4rem;
+  }
+
+  .main-banner h1 {
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    max-width: 100%;
+    margin: 0;
+    }
+
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: inline;
+  }
+
+  .container.banner {
+    justify-content: center;
+  }
+
+  .main-banner {
+    width: 100%;
+    margin-top: 9rem;
+    margin-right: 0;
+    padding: 1rem 0rem;
+  }
+
+  .main-banner h1 {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+  }
+
+  .highlights,
+  .company-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .highlights {
+    margin: 3rem auto;
+  }
+
+  .highlight {
+    font-size: 0.77rem;
+    margin: 0.77rem;
+    height: auto;
+  }
+
+  .info {
+    width: 100%;
+    margin: 0;
+  }
+
+  .info h6 {
+    width: auto;
+    margin: 0;
+    text-align: center;
+  }
+
+  .info p {
+    font-size: 0.77rem;
+    margin-bottom: 4rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  footer span {
+    display: none;
+  }
+
+  footer .container {
+    justify-content: center;
+  }
+}
